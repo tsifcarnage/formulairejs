@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+:root{
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto-regular', sans-serif;
+    color: var(--White);
+    background-color: var(--DarkSlateGrey);
+}
+.start{
+    background-color: var(--White);
+    color: var(--DarkSlateGrey);
+    padding-left: 5rem;
+    width: 100%;
+    max-width: 50em;
+    height: 475px;
+    margin: 10rem auto;
+    border-radius: 2rem;
+}
+.wrapper{
+    display: flex;
+    width: 98%;
+    gap: 5rem;
+}
+.title{
+    padding-top: 5rem;
+    width: 100%;
+    h2{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    p{
+        padding: 1rem 0;
+    }
+    ul>li{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+}
+.visual{
+    width: 60%;
+    max-width: 500px;
+    height: 90%;
+    max-height: 300px;
+    padding-top: 1rem;
+    object-fit: contain;
+}
+.visual>img{
+    width: 300px;
+}
