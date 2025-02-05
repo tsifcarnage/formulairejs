@@ -27,12 +27,13 @@ body{
     background-color: var(--DarkSlateGrey);
 }
 .start{
+    display: block;
     background-color: var(--White);
     color: var(--DarkSlateGrey);
     padding-left: 5rem;
     width: 100%;
-    max-width: 50em;
-    height: 475px;
+    max-width: 51em;
+    height: 520px;
     margin: 10rem auto;
     border-radius: 2rem;
 }
@@ -43,11 +44,7 @@ body{
 }
 .title{
     padding-top: 5rem;
-    width: 100%;
-    h2{
-        font-size: 3rem;
-        padding-bottom: 2rem;
-    }
+    width: 100%; 
     p{
         padding: 1rem 0;
     }
@@ -58,6 +55,10 @@ body{
     }
 
 }
+h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
 .visual{
     width: 60%;
     max-width: 500px;
@@ -67,12 +68,18 @@ body{
     object-fit: contain;
 }
 .visual>img{
-    width: 300px;
+    width: 340px;
 }
 form{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 5rem;
+    height: 100%;
+
+}
+label{
+    font-weight: 900;
 }
 input{
     padding: 1.5rem;
@@ -85,3 +92,62 @@ button{
     background-color: var(--DarkSlateGrey);
     border-radius: .5rem;
 }
+
+@media screen and (max-width:706px) {
+    .start{
+        position: relative;
+        overflow-y: auto;
+        padding: 0;
+        height: 650px;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        position: relative;
+        top: 22rem;
+        gap: 20rem;
+        max-height: 400px;
+        .title{
+            padding: 2rem;
+        }
+    }
+    
+}
+.success{
+    display: none;
+    background-color: var(--White);
+    color: var(--DarkSlateGrey);
+    padding-left: 2rem;
+    width: 100%;
+    max-width: 30em;
+    min-width: 324px;
+    height: 460px;
+    margin: 10rem auto;
+    border-radius: 2rem;
+}
+.wrapper-small{
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 2rem;
+    img{
+        margin: 4rem 0;
+    }
+    h2{
+        padding-bottom: 2rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+    p{
+        padding-bottom: 2rem;
+        width: 100%;
+        max-width: 360px;
+    }
+    button{
+        width: 100%;
+        max-width: 360px;   
+    }
+    span{
+        font-weight:bold;
+    }
+}
+
